@@ -39,16 +39,20 @@
 			}
 		</style>
 	</section>
-	<section class="slide">
+	<section class="slide" id="ou">
 		<h2>Как делаются проекты на MODX?</h2>
 		<ul>
-			<li>Х*к-х*к и в продакшн!</li>
-			<li>Разработка в команде: waterfall, scrum, canban и тд.</li>
-			<li>Длительная поддержка и развитие</li>
+			<li class="next">Х*к-х*к и в продакшн!</li>
+			<li class="next">Разработка в команде: waterfall, scrum, canban и тд.</li>
+			<li class="next">Длительная поддержка и развитие</li>
 		</ul>
-		<footer>
-			Чаще всего первый вариант, к сожалению. Но если проект более-менее крупный, то над проектом скорее всего будет работать команда по какой-то методологии. Либо есть проекты, которые делаешь сам, но требуется постоянная поддержка и развитие.
-		</footer>
+		<img src="pictures/ou.jpg" alt="" class="place right top">
+		<style>
+			#ou img {
+				top: 12%;
+				height: 300px;
+			}
+		</style>
 	</section>
 	<section class="slide">
 		<img src="pictures/teammates.jpg" alt="" class="cover" style="width: 100%;">
@@ -56,15 +60,24 @@
 			Работа в команде над MODX сайтом всегда была адом. Конфликты ID, особенности архитектуры не позволяют в полной мере пользоваться современными инструментами.
 		</footer>
 	</section>
-	<section class="slide">
+	<section class="slide" id="Tools">
 		<h2>Решения</h2>
 		<ul>
-			<li>Teleport</li>
-			<li>SE Manager (умер)</li>
-			<li>ElementHelper</li>
-			<li>Cast (похоже тоже умер)</li>
-			<li>и другие</li>
+			<li class="next">Teleport</li>
+			<li class="next">Teleport</li>
+			<li class="next">SE Manager (умер)</li>
+			<li class="next">ElementHelper</li>
+			<li class="next">Cast (похоже тоже умер)</li>
+			<li class="next">и другие</li>
 		</ul>
+		<img src="pictures/kez.png" alt="" class="place top right">
+		<style>
+			#Tools img {
+				right: 10%;
+				top: 10%;
+				height: 300px;
+			}
+		</style>
 	</section>
 	<section class="slide" id="cr1">
 		<h2>Code review</h2>
@@ -102,7 +115,7 @@
 	<section class="slide">
 		<img src="pictures/modmore.png" class="place middle middle">
 	</section>
-	<section class="slide">
+	<section class="slide" id="history">
 		<h2>Историческая справка</h2>
 		<ul>
 			<li>Первый коммит 1 июня 2014 года</li>
@@ -110,6 +123,40 @@
 			<li>Документация на русском летом 2015</li>
 			<li>11 минорных версий, стабильная 1.0 на подходе</li>
 		</ul>
+		<img src="pictures/history.png" alt="" class="place bottom right">
+		<style>
+			#history img {
+				bottom: 10%;
+				right: 10%;
+				width: 200px;
+			}
+		</style>
+	</section>
+	<section class="slide">
+		<h2>Установка</h2>
+		<p>Для начала нужно установить Composer – менеджер пакетов для PHP.</p>
+		<pre>
+		 	<code>git clone https://github.com/modmore/Gitify.git gitify</code>
+		 	<code>cd gitify</code>
+		 	<code>compser install</code>
+		 	<code>chmod +x Gitify</code>
+		 	<code><mark>gitify init</mark></code>
+		</pre>
+		<p class="note">Можно настроить alias в .bashrc или .bash_profile</p>
+	</section>
+	<section class="slide">
+		<h2>Настройка и конфигурация</h2>
+		<p>Вся конфигурация сайта хранится в файле <code>.gitify</code>в формате YAML.</p>
+		<p class="double">
+		<pre >
+			<code>data_directory: _data/</code>
+			<code>data:</code>
+			<code>	templates:</code>
+			<code>		class: modTemplate</code>
+			<code>		primary: templatename</code>
+			<code>		extension: .html</code>
+		</pre>
+		</p>
 	</section>
 	<section class="slide">
 		<h2>Что может: build/extract</h2>
@@ -160,31 +207,6 @@
 		<h2>Автоочистка</h2>
 		<p>
 			Удаляются все ресурсы, которым на найдено соответствие в файлах. Очистку в момент сборки можно отключить передав параметр <code>--no-cleanup</code>.
-		</p>
-	</section>
-	<section class="slide">
-		<h2>Установка</h2>
-		<p>Для начала нужно установить Composer – менеджер пакетов для PHP.</p>
-		<pre>
-		 	<code>git clone https://github.com/modmore/Gitify.git gitify</code>
-		 	<code>cd gitify</code>
-		 	<code>compser install</code>
-		 	<code>chmod +x Gitify</code>
-		</pre>
-		<p class="note">Можно настроить alias в .bashrc или .bash_profile</p>
-	</section>
-	<section class="slide">
-		<h2>Настройка и конфигурация</h2>
-		<p>Вся конфигурация сайта хранится в файле <code>.gitify</code>в формате YAML.</p>
-		<p class="double">
-		<pre >
-			<code>data_directory: _data/</code>
-			<code>data:</code>
-			<code>	templates:</code>
-			<code>		class: modTemplate</code>
-			<code>		primary: templatename</code>
-			<code>		extension: .html</code>
-		</pre>
 		</p>
 	</section>
 	<section class="slide">
