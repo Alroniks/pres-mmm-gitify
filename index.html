@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>Gitify – швейцарский нож для MODX-воина</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="node_modules/shower-material/styles/screen-16x10.css">
 </head>
-<body class="shower list">
+<body class="shower list" data-plugins="next timer markdown notes" data-timing="05:00">
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>Gitify – швейцарский нож для MODX-воина</h1>
+		<p>Иван Климчук, <a href="https://alroniks.com">Alroniks Experts</a>.</p>
 	</header>
 	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
+		<h2>Gitify – швейцарский нож для MODX-воина</h2>
+		<p>Вооруженный до зубов <a href="http://klimchuk.by">Иван Климчук</a></p>
 		<img src="pictures/cover.jpg" alt="" class="cover">
-		<!--
-			To apply styles to the certain slides
-			set slide ID to get needed elements
-			-->
+		<img src="pictures/swiss.png" alt="" class="place bottom right">
 		<style>
 			#cover h2 {
 				margin:30px 0 0;
@@ -37,150 +34,232 @@
 				#cover p a {
 					color:#FFF;
 					}
+			#cover img.place {
+				width: 10em;
+			}
 		</style>
 	</section>
 	<section class="slide">
-		<h2>Shower key features</h2>
-		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+		<h2>Как делаются проекты на MODX?</h2>
+		<ul>
+			<li>Х*к-х*к и в продакшн!</li>
+			<li>Разработка в команде: waterfall, scrum, canban и тд.</li>
+			<li>Длительная поддержка и развитие</li>
+		</ul>
+		<footer>
+			Чаще всего первый вариант, к сожалению. Но если проект более-менее крупный, то над проектом скорее всего будет работать команда по какой-то методологии. Либо есть проекты, которые делаешь сам, но требуется постоянная поддержка и развитие.
+		</footer>
 	</section>
 	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+		<img src="pictures/teammates.jpg" alt="" class="cover" style="width: 100%;">
+		<footer>
+			Работа в команде над MODX сайтом всегда была адом. Конфликты ID, особенности архитектуры не позволяют в полной мере пользоваться современными инструментами.
+		</footer>
 	</section>
 	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+		<h2>Решения</h2>
+		<ul>
+			<li>Teleport</li>
+			<li>SE Manager (умер)</li>
+			<li>ElementHelper</li>
+			<li>Cast (похоже тоже умер)</li>
+			<li>и другие</li>
+		</ul>
+	</section>
+	<section class="slide" id="cr1">
+		<h2>Code review</h2>
+		<img src="pictures/cat.gif" alt="" class="cover" style="width: 100%;">
+		<style>
+			#cr1 h2 {
+				color: #fff;
+			}
+		</style>
 	</section>
 	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
-		</ol>
+		<h2>Code review</h2>
+		<ul>
+			<li>дешевый поиск ошибок</li>
+			<li>сохранность качества кода</li>
+			<li>непрерывный процесс обучения</li>
+			<li>коммуникация внутри команды</li>
+		</ul>
+		<footer>
+			Код ревью очень важный этап работы над проектом, особенно в команде. Он в несколько раз повышает уровень и качество работы разработчиков. Так как чтение чужого кода, написание читаемого собственного кода заставляют программиста более внимательно относиться к своему коду.
+		</footer>
 	</section>
 	<section class="slide">
-		<h2>Serious citations</h2>
-		<figure>
-			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
-		</figure>
+		<h2 class="shout">Git и GitHub</h2>
 	</section>
 	<section class="slide">
-		<h2>Code samples</h2>
+		<img src="pictures/knife.jpg" alt="" class="cover">
+	</section>
+	<section class="slide">
+		<h2>Gitify</h2>
+		<p class="">
+			Основная задача Gitify – это собрать элементы действующего сайта в понятный человеку формат, сохранить в файлы и точно так же восстановить сайт из файлов, но уже в другом месте (на боевом сервере, например). Важное в этом процессе — читаемый формат и то, что версиями этих файлов можно управлять посредством git.
+		</p>
+	</section>
+	<section class="slide">
+		<img src="pictures/modmore.png" class="place middle middle">
+	</section>
+	<section class="slide">
+		<h2>Историческая справка</h2>
+		<ul>
+			<li>Первый коммит 1 июня 2014 года</li>
+			<li>Анонс на MODX Weekend в сентябре 2014</li>
+			<li>Документация на русском летом 2015</li>
+			<li>11 минорных версий, стабильная 1.0 на подходе</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>Что может: build/extract</h2>
 		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <mark class="comment">&lt;!--Comment--&gt;</mark></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
+			<code>gitify extract</code>
+			<code>gitify build</code>
+			<code>gitify build --force</code>
+			<code>gitify build --skip-clear-cache</code>
+			<code>gitify build --force --no-backup</code>
 		</pre>
 	</section>
 	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
-	</section>
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
-		<img src="pictures/picture.jpg" alt="" class="cover">
-		<style>
-			#picture h2 {
-				color:#FFF;
-				}
-		</style>
+		<h2>Что может: backup/restore</h2>
+		<pre>
+			<code>gitify backup</code>
+			<code>gitify backup name</code>
+			<code>gitify restore</code>
+			<code>gitify restore name</code>
+			<code>gitify restore last</code>
+		</pre>
 	</section>
 	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
+		<h2>Что может: modx:install и modx:upgrade</h2>
+		<pre>
+			<code>gitify modx:install</code>
+			<code>gitify modx:install 2.4.2-pl</code>
+			<code>gitify modx:install latest</code>
+			<code>gitify modx:install --download</code>
+			<code>gitify modx:upgrade</code>
+			<code>gitify modx:upgrade --download</code>
+		</pre>
 	</section>
 	<section class="slide">
-		<h2>Inner navigation</h2>
-		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
-		</ol>
+		<h2>Что может: package:install</h2>
+		<pre>
+			<code>gitify package:install packagename</code>
+			<code>gitify package:install --all</code>
+			<code>gitify package:install --all --interactive</code>
+		</pre>
 	</section>
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
+	<section class="slide">
+		<h2>Как быть с одинаковыми ID?</h2>
+		<p>
+			Объект, ID которого уже существует, временно сохраняется в памяти. После полного завершения остальной сборки, включая очистку, gitify пытается разрешить конфликт. В случае перемещения или переименования объекта, после очистки "старый" объект будет удален, а новый будет вставлен правильно. Если же конфликт на самом деле есть, сохраненный в памяти объект будет вставлен с новым ID и для него будет запущена команда <code>gitify extract</code>.
+		</p>
 	</section>
-	<section class="slide" id="see-more">
-		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
-		</h2>
+	<section class="slide">
+		<h2>Автоочистка</h2>
+		<p>
+			Удаляются все ресурсы, которым на найдено соответствие в файлах. Очистку в момент сборки можно отключить передав параметр <code>--no-cleanup</code>.
+		</p>
+	</section>
+	<section class="slide">
+		<h2>Установка</h2>
+		<p>Для начала нужно установить Composer – менеджер пакетов для PHP.</p>
+		<pre>
+		 	<code>git clone https://github.com/modmore/Gitify.git gitify</code>
+		 	<code>cd gitify</code>
+		 	<code>compser install</code>
+		 	<code>chmod +x Gitify</code>
+		</pre>
+		<p class="note">Можно настроить alias в .bashrc или .bash_profile</p>
+	</section>
+	<section class="slide">
+		<h2>Настройка и конфигурация</h2>
+		<p>Вся конфигурация сайта хранится в файле <code>.gitify</code>в формате YAML.</p>
+		<p class="double">
+		<pre >
+			<code>data_directory: _data/</code>
+			<code>data:</code>
+			<code>	templates:</code>
+			<code>		class: modTemplate</code>
+			<code>		primary: templatename</code>
+			<code>		extension: .html</code>
+		</pre>
+		</p>
+	</section>
+	<section class="slide">
+		<h2>Где применять?</h2>
+		<ul>
+			<li>Работа над проектом из IDE + code review</li>
+			<li>Работа над проектом в команде: N*dev, M*stage, production</li>
+			<li>Установка и обновление MODX</li>
+			<li>Установка и обновление пакетов</li>
+			<li>Создание резервных копий через backup/restore или через git</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink"><a href="http://bit.ly/gitifydocs">bit.ly/gitifydocs</a></h2>
+	</section>
+	
+	<section class="slide">
+		<h2 class="shout shrink">Demo</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Планы по развитию</h2>
+		<ul>
+			<li>Доработать управление пакетами: установка локальных, добавить параметр --save, добавить сохранение в конфигурацию уже установленных пакетов</li>
+			<li>Доработать существующие функции и исправить баги</li>
+			<li>Добавить работу со схемами БД для более аккуратной работы с данными</li>
+			<li>Улучшить документацию</li>
+		</ul>
+	</section>
+
+	<section class="slide" id="Contacts"><div>
+		<h2>Контакты</h2>
+		<ul>
+			<li class="next"><a href="https://twitter.com/iklimchuk">iklimchuk</a> – Twitter</li>
+			<li class="next"><a href="https://github.com/Alroniks/">Alroniks</a> – GitHub</li>
+			<br>
+			<li class="next"><a href="http://klimchuk.com">klimchuk.com</a></li>
+			<li class="next"><a href="mailto:ivan@klimchuk.com">ivan@klimchuk.com</a></li>
+			<p class="next note">alroniks</p>
+		</ul>	
+		<span class="next">
+			<img class="ae" src="pictures/ae.svg" alt="">
+		</span>
+		<span class="next">
+			<img class="pt1" src="pictures/1pt.png" alt="">
+		</span>
 		<style>
-			#see-more h2 {
-				font-size:100px
-				}
-			#see-more img {
-				width:0.72em;
-				height:0.72em;
-				}
+			#Contacts img {
+				position: absolute;
+				width: 30%;
+				right: 15%;
+			}
+			#Contacts img.ae {
+				top: 30%;
+			}
+			#Contacts img.pt1 {
+				top: 60%;
+			}
 		</style>
+	</div></section>
+	<section class="slide">
+		<img src="pictures/ae-symb.png" alt="" class="cover">
+	</section>
+	<section class="slide">
+		<h2 class="shout">Вопросы?</h2>
 	</section>
 	<p class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
+		<a href="https://github.com/Alroniks/pres-mmm-gitify">Презентация на GitHub</a>
 	</p>
-	<!--
-		To hide progress bar from entire presentation
-		just remove “progress” element.
-		-->
 	<div class="progress"></div>
 	<script src="node_modules/shower-core/shower.min.js"></script>
-	<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
-	<!-- Photos by John Carey, fiftyfootshadows.net -->
+	<script src="node_modules/shower-notes/shower-notes.js"></script>
+	<script src="node_modules/shower-timer/shower-timer.js"></script>
+	<script src="node_modules/shower-next/shower-next.js"></script>
+	<!-- Copyright © 2015 Ivan Klimchuk, Alroniks Experts. -->
 </body>
 </html>
